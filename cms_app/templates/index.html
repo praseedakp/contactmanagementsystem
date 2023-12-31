@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a42570f4e1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Indexpage</title>
+    <style>
+        body{
+        color:white;
+
+        }
+        img{
+        border-radius:100%;
+
+
+        }
+        p{
+        color:#3333cc;
+        font-family:cursive;
+        font-size:25px;
+        text-align:justify;
+        }
+        .card{
+        margin-left:600px;
+        border:2px solid #80ffdf;
+
+        }
+        .card .card-img-top{
+        height:300px;
+        width:300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius:100%;
+
+        }
+        .btn{
+        width:260px;
+
+        }
+        .last{
+        margin-top:100px;
+        height:100px;
+        width:100%;
+        background:#004d39;
+        }
+        .navbar{
+        background: #00664d;
+        }
+        .btn{
+        border:4px solid #80ffdf;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/cms_app/new/">
+      <img src="{% static 'contact.jpg' %}" alt="" width="50" height="40" class="d-inline-block align-text-top">
+         <b style="color:white;">CONTACT MANAGEMENT SYSTEM</b>
+    </a>
+  </div>
+</nav>
+<p>Contact Management System consist of different contact information of registered persons.Talking about the system, it contains all the required functions which include adding, viewing, deleting and updating contact lists. While adding the contact of a person, he/she has to provide first name, last name, address,email and contact details. The user can also update the contact list if he/she wants to.The system shows the contact details in a list view. And also the user easily delete any contact details.</p>
+<div class="card" style="width:300px;height:300px;">
+  <img src="{% static 'contact.jpg' %}" class="card-img-top">
+  <div class="card-body">
+    <a href="http://127.0.0.1:8000/cms_app/regfunction/" class="btn btn-dark"><b>REGISTER</b></a>
+  </div>
+</div>
+<div class="last">
+
+</div>
+</body>
+</html>
